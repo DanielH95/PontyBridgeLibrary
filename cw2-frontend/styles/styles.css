@@ -1,0 +1,107 @@
+/* GLOBAL */
+
+h1 {
+    margin: 14px;
+    text-align: right;
+}
+
+    h1:hover {
+        color: grey;
+    }
+
+header {
+    margin: 14px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+    button:hover {
+        background-color: grey;
+        cursor: pointer;
+    }
+
+.titleHeader {
+    border-bottom: black solid 2px;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+/* USERS */
+
+.userForm {
+    margin: 14px;
+}
+
+.getUsersBtn {
+    margin: 14px;
+}
+
+.userSearchBar {
+    margin: 14px;
+}
+
+    .userSearchBar button {
+        margin: 14px;
+    }
+
+.userResults {
+    margin: 14px;
+}
+
+#divShowUsers form {
+    display: flex;
+}
+
+    #divShowUsers p {
+        margin: 14px;
+    }
+    
+    #divShowUsers input {
+        margin: 14px;
+    }
+    
+    #divShowUsers button {
+        margin: 14px;
+    }  
+
+/* BOOKS */
+
+.bookForm {
+    margin: 14px;
+}
+
+.getBooksBtn {
+    margin: 14px;
+}
+
+.bookSearchBar {
+    margin: 14px;
+}
+
+    .bookSearchBar button {
+        margin: 14px;
+    }
+
+.bookResults {
+    margin: 14px;
+}
+
+#divShowBooks form {
+    display: flex;
+}
+
+    #divShowBooks p {
+        margin: 14px;
+    }
+    
+    #divShowBooks input {
+        margin: 14px;
+    }
+    
+    #divShowBooks button {
+        margin: 14px;
+    }  

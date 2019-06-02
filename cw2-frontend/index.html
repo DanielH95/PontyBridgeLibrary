@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+    <title>PontyBridge Library System</title>
+</head>
+<body>
+
+    <!-- Title of Page -->
+    <div class="titleHeader">
+        <h1>PontyBridge Library System</h1>
+    </div>
+
+    <!-- User Management  -->
+    <header>
+        <h2>User Management</h2>
+    </header>
+
+    <!-- User Form -->
+    <section class="userForm">
+        <h4>Add User</h4>
+        <form action="http://127.0.0.1:3000/users" method="POST" class="addUser">
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="text" placeholder="Barcode" name="barcode" required>
+            <select name="memberType">
+                <option value="Staff">Staff</option>
+                <option value="Student">Student</option>
+            </select>
+            <button id="submitUser" type="submit" onclick="addingUsers()">Submit</button> 
+        </form>
+    </section>    
+
+    <!-- User Results -->
+    <section class="userResults">
+        <h4>Users</h4>
+        <div id="divShowUsers">
+            <!-- JS Generated Code here -->
+        </div>
+    </section>
+
+    <!-- Button to Get Users -->
+    <div class="getUsersBtn">
+        <button onclick="getUsers()">Get Users</button>
+    </div>
+
+    <!-- User Search -->
+    <section class="userSearchBar">
+        <h4>Search Users</h4>
+        <form method="GET" id="searchUsers" >
+            <input id="userInputSearch" type="text" placeholder="Search by Name">
+            <button type="button" onclick="userSearch()">Search Users</button> 
+        </form> 
+    </section>
+
+    <!-- Break -->
+    <br>
+
+    <!-- Book Management -->
+    <header>
+        <h2>Book Management</h2>
+    </header>
+
+    <!-- Book Form -->
+    <section class="bookForm">
+        <h4>Add Book</h4>
+        <form action="http://127.0.0.1:3000/books" method="POST" class="addBook">
+            <input type="text" placeholder="Title" name="title" required>
+            <input type="text" placeholder="ISBN" name="isbn" required>
+            <button id="submitBook" type="submit" onclick="addingBooks()">Submit</button> 
+        </form>
+    </section>
+
+    <!-- Book Results -->
+    <section class="bookResults">
+        <h4>Books</h4>
+        <div id="divShowBooks">
+            <!-- JS Generated Code here -->
+        </div>
+    </section>
+
+    <!-- Button to Get Books -->
+    <div class="getBooksBtn">
+        <button onclick="getBooks()">Get Books</button>
+    </div>
+
+    <!-- Book Search -->
+    <section class="bookSearchBar">
+        <h4>Search Books</h4>
+        <form method="GET" id="searchBooks">
+            <input id="bookInputSearch" type="text" placeholder="Search by Title">
+            <button type="button" onclick="bookSearch()">Search Books</button> 
+        </form> 
+    </section>
+
+</body>
+
+</html>
